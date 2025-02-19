@@ -12,9 +12,9 @@ import './styles.css'
 //Setting up the Spotify API and Endpoints
 const NOW_PLAYING_ENDPOINT = 'https://api.spotify.com/v1/me/player/currently-playing';
 const TOKEN_ENDPOINT = 'https://accounts.spotify.com/api/token';
-const client_id = 'a0b9189f8e764fc688717c9aad303d5d';
-const client_secret = '639c3fb3b2d84490890f4f0a066fa38d';
-const refresh_token = 'AQAIAq8Z3txr9JQbWMYHMA_-9KC63cuXVBBuaknW016LC5-Xn2j-5xlMiMmure6EcWeBGEbj4EYIvmYXo94h73--cKXlEzWMJ463ldzBdITY9c_wLrMbVRwppogXSjbsyiw';
+const client_id = process.env.REACT_APP_SPOTIFY_CLIENT_ID;
+const client_secret = process.env.REACT_APP_SPOTIFY_CLIENT_SECRET;
+const refresh_token = process.env.REACT_APP_SPOTIFY_REFRESH_TOKEN;
 
 
 //Function to generate an access token using the refresh token everytime the website is opened or refreshed
