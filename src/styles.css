@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Signika+Negative:wght@300..700&display=swap');
+html {
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'popins', sans-serif;
+}
+
+.nowPlayingCard {
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 3px solid #1DB954;
+    align-items: center;
+    width: 400px;
+    background-color: black;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.5s ease;
+    color: white;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.nowPlayingCard:hover {
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+    transform: translateX(-10px) translateY(-10px);
+    transition: all 0.5s ease;
+}
+  
+.nowPlayingCard a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+.nowPlayingCard a:hover {
+    color: #1DB954;
+    text-decoration: underline;
+}
+
+.nowPlayingImage img {
+    border-radius: 8px;
+    transition: all 0.5s ease;
+    width: 110px;
+    height: 110px;
+    flex-shrink: 0;
+    margin: 10px;
+}
+
+
+#nowPlayingDetails {
+    justify-content: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 54%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 54%;
+    height: 100%;
+}
+
+.nowPlayingTitle, .playlistName {
+    flex-shrink: 0;
+    color: #000;
+    white-space: nowrap;
+    text-align: left;
+    font-size: 20px;
+    width: 100%;
+}
+
+.nowPlayingArtist, .playlistHeader {
+    text-align: left;
+    flex-shrink: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.nowPlayingTime {
+    text-align: left;
+}
+
+.nowPlayingState {
+    text-align: center;
+    width: 20%;
+    padding: 10px;
+}
+
+.nowPlayingState img{
+    filter: invert(100%);
+    width: 100%;
+}
+
+@keyframes slide-in-top {
+    0% {
+      transform: translateY(-1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
